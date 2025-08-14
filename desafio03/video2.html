@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fallout: New Vegas</title>
+    <style>
+        /* Reset básico */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Alinha tudo verticalmente */
+        }
+
+        /* Estilo do título */
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px; /* Espaço entre o título e o vídeo */
+            text-align: center;
+        }
+
+        /* Estilo do vídeo maior */
+        .video-grande {
+            width: 800px; /* Largura do vídeo */
+            height: 450px; /* Altura proporcional (16:9) */
+            background-color: #000;
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Estilo do espaço para texto */
+        .texto {
+            width: 800px; /* Mesma largura do vídeo */
+            margin-top: 20px; /* Espaço entre o vídeo e o texto */
+            padding: 10px;
+            font-size: 16px;
+            color: #555;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Estilo do botão Voltar */
+        .botao-voltar {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botao-voltar:hover {
+            background-color: #555;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .video-grande, .texto {
+                width: 90%; /* Ajusta a largura em telas pequenas */
+                height: auto; /* Altura ajustada automaticamente */
+            }
+        }
+
+        /* Estilo do espaço para texto */
+        .texto {
+            width: 800px; /* Mesma largura do vídeo */
+            margin-top: 20px; /* Espaço entre o vídeo e o texto */
+            padding: 20px; /* Espaçamento interno */
+            font-size: 16px;
+            color: #333; /* Cor do texto */
+            text-align: center;
+            background-color: #e0e0e0; /* Cor de fundo cinza mais escura */
+            border: 1px solid #ccc; /* Borda sutil */
+            border-radius: 10px; /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        }
+    </style>
+</head>
+<body>
+    <!-- Título -->
+    <h1>Fallout: New Vegas</h1>
+
+    <!-- Vídeo Grande -->
+    <div class="video-grande">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1DD_NCM_RJs?si=szNGxm02qKejGXk_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Espaço para Texto -->
+    <div class="texto">
+        <p>
+
+            <h1>O que voce precisa saber sobre Fallout: New Vegas</h1>
+            <h5>Retrofuturismo, mutantes, radiacao, faccoes e jazz</h5>
+
+            <p>Fallout: New Vegas, desenvolvido pela Obsidian Entertainment, é um jogo que personifica a liberdade e a complexidade de escolhas em um mundo pós-apocalíptico repleto de personalidade e estilo. Situado no deserto de Mojave, o jogo oferece uma experiência imersiva em um universo retrofuturista único, onde a estética dos anos 1950 se mistura com tecnologia avançada e uma sociedade devastada pela guerra nuclear. Esse contraste entre o passado idealizado e o futuro distópico cria um cenário fascinante, repleto de ironia, humor ácido e uma crítica social sutil.</p>
+
+            <p>Um dos maiores trunfos de New Vegas é a liberdade que ele concede ao jogador. Desde o início, você pode escolher como quer explorar o mundo: seja como um herói altruísta, um mercenário ambicioso ou até mesmo um vilão implacável. O jogo não impõe um caminho único, permitindo que você siga a história principal ou se perca em uma infinidade de missões secundárias, cada uma com suas próprias ramificações e consequências. Essa liberdade é amplificada pelo sistema de reputação, onde suas ações afetam como as facções e NPCs (personagens não jogáveis) enxergam você, criando uma experiência altamente personalizada.</p>
+
+            <p>As quests (missões) em New Vegas são um exemplo magistral de design narrativo. Em muitas delas, há múltiplas formas de resolvê-las, dependendo das suas habilidades, aliados e escolhas morais. Por exemplo, uma simples tarefa de recuperar um item pode se transformar em um dilema ético, onde você decide entre trair alguém, negociar pacificamente ou recorrer à violência. Essa variedade de abordagens não só aumenta a rejogabilidade, mas também faz com que cada decisão pareça significativa, reforçando a sensação de que o mundo reage às suas ações.</p>
+        
+           
+        </p>
+    </div>
+
+    <!-- Botão Voltar -->
+    <button class="botao-voltar" onclick="window.history.back()">Voltar</button>
+</body>
+</html>

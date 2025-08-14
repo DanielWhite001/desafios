@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../desafio06/imagens/aviao.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.topo a{
+    position: relative;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.topo a::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -5px;
+   width: 100%;
+   height: 3px;
+   background: white;
+   border-radius: 5px;
+   transform-origin: right;
+   transform: scaleX(0);
+   transition: transform .5s;
+}
+
+.topo a:hover::after{
+    transition: left;
+    transform: scaleX(1);
+}
+
+.topo .botaoLogin{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.topo .botaoLogin:hover{
+    background-color: white;
+    color: #db8c25;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease, height .2s ease;
+    overflow: hidden;
+    transform: scale(0);
+
+}
+
+.wrapper.active-botaoLogin{
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .form-caixa{
+    width: 100%;
+    padding: 40px;
+}
+/*---------------------------------------*/
+.wrapper .form-caixa.login{
+   transition: transform .18s ease;
+   transform: translateX(0);
+}
+
+.wrapper.active .form-caixa.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+/*---------------------------------------*/
+.wrapper .form-caixa.registro{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-caixa.registro{
+    transition: transform .18s ease;
+    transform: translateX(0);
+ }
+/*---------------------------------------*/
+.wrapper .icon-erro{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #db8c25;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-caixa h2{
+    font-size: 2em;
+    color: #db8c25;
+    text-align: center;
+}
+
+.input-caixa{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #db8c25;
+    margin: 30px 0;
+}
+
+.input-caixa label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #db8c25;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-caixa input:focus~label,
+.input-caixa input:valid~label {
+    top: -5px;
+}
+
+.input-caixa input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #db8c25;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+}
+
+.input-caixa .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1em;
+    color: black;
+    line-height: 60px;
+
+}
+
+.relembrar{
+    font-size: .9em;
+    color: #db8c25;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.relembrar label input{
+    accent-color: #db8c25;
+    margin-right: 3px;
+}
+
+.relembrar a{
+    color: #db8c25;
+}
+
+.relembrar a:hover{
+    text-decoration: underline;
+}
+
+.botao{
+    width: 100%;
+    height: 45px;
+    background-color: #db8c25;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.login-registro{
+    font-size: 1em;
+    color: #db8c25;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-registro p a{
+    color: #db8c25;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-registro p a:hover{
+    text-decoration: underline;
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .wrapper {
+        width: 350px;
+    }
+
+    .wrapper .form-caixa {
+        padding: 30px;
+    }
+
+    .wrapper .form-caixa.login {
+        transform: translateX(0);
+    }
+
+    .wrapper.active .form-caixa.login {
+        transform: translateX(-350px);
+    }
+
+    .wrapper .form-caixa.registro {
+        transform: translateX(350px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 20px 20px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .topo a {
+        font-size: 0.9em;
+        margin-left: 20px;
+    }
+
+    .topo .botaoLogin {
+        width: 100px;
+        height: 40px;
+        font-size: 0.9em;
+        margin-left: 20px;
+    }
+
+    .wrapper {
+        width: 300px;
+        height: 400px;
+    }
+
+    .wrapper .form-caixa {
+        padding: 20px;
+    }
+
+    .form-caixa h2 {
+        font-size: 1.5em;
+    }
+
+    .input-caixa {
+        height: 40px;
+        margin: 20px 0;
+    }
+
+    .input-caixa input {
+        font-size: 0.9em;
+    }
+
+    .relembrar {
+        font-size: 0.8em;
+    }
+
+    .botao {
+        height: 40px;
+        font-size: 0.9em;
+    }
+
+    .login-registro {
+        font-size: 0.9em;
+    }
+
+    .wrapper .form-caixa.login {
+        transform: translateX(0);
+    }
+
+    .wrapper.active .form-caixa.login {
+        transform: translateX(-300px);
+    }
+
+    .wrapper .form-caixa.registro {
+        transform: translateX(300px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper {
+        width: 280px;
+    }
+
+    .wrapper .form-caixa.login {
+        transform: translateX(0);
+    }
+
+    .wrapper.active .form-caixa.login {
+        transform: translateX(-280px);
+    }
+
+    .wrapper .form-caixa.registro {
+        transform: translateX(280px);
+    }
+}

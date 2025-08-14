@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doom: Eternal</title>
+    <style>
+        /* Reset básico */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Alinha tudo verticalmente */
+        }
+
+        /* Estilo do título */
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px; /* Espaço entre o título e o vídeo */
+            text-align: center;
+        }
+
+        /* Estilo do vídeo maior */
+        .video-grande {
+            width: 800px; /* Largura do vídeo */
+            height: 450px; /* Altura proporcional (16:9) */
+            background-color: #000;
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Estilo do espaço para texto */
+        .texto {
+            width: 800px; /* Mesma largura do vídeo */
+            margin-top: 20px; /* Espaço entre o vídeo e o texto */
+            padding: 10px;
+            font-size: 16px;
+            color: #555;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Estilo do botão Voltar */
+        .botao-voltar {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botao-voltar:hover {
+            background-color: #555;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .video-grande, .texto {
+                width: 90%; /* Ajusta a largura em telas pequenas */
+                height: auto; /* Altura ajustada automaticamente */
+            }
+        }
+
+        /* Estilo do espaço para texto */
+        .texto {
+            width: 800px; /* Mesma largura do vídeo */
+            margin-top: 20px; /* Espaço entre o vídeo e o texto */
+            padding: 20px; /* Espaçamento interno */
+            font-size: 16px;
+            color: #333; /* Cor do texto */
+            text-align: center;
+            background-color: #e0e0e0; /* Cor de fundo cinza mais escura */
+            border: 1px solid #ccc; /* Borda sutil */
+            border-radius: 10px; /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        }
+    </style>
+</head>
+<body>
+    <!-- Título -->
+    <h1>Doom: Eternal</h1>
+
+    <!-- Vídeo Grande -->
+    <div class="video-grande">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/24W_dmJIqfA?si=JxiwmpmqJHdDGYiT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Espaço para Texto -->
+    <div class="texto">
+        <p>
+
+            <h1>O que voce precisa saber sobre Doom: Eternal</h1>
+            <h5>Rasgue e dilacere, ate nao sobrar nada.</h5>
+
+            <p>Doom Eternal, desenvolvido pela id Software, é um jogo que eleva a violência visceral e a ação frenética a um patamar épico. Como o Slayer, você é uma força imparável contra as hordas demoníacas que invadiram a Terra, e o jogo não faz concessões: é pura adrenalina, destruição e caos controlado. A violência aqui é extrema, com execuções brutais (os famosos "glory kills"), armas poderosas e inimigos grotescos sendo despedaçados em uma coreografia de destruição que é tão satisfatória quanto intensa.</p>
+
+            <p>A jogabilidade de Doom Eternal é frenética e exige que você esteja sempre em movimento. Correr, pular, atirar e esmagar são essenciais para sobreviver, criando um ritmo que não dá trégua. O jogo introduz mecânicas como o gancho, que permite movimentos ágeis e estratégicos, e um sistema de gestão de recursos que incentiva o uso de todas as ferramentas à sua disposição. Cada combate é uma dança mortal, onde a hesitação pode significar a derrota.</p> 
+
+            <p>A trilha sonora, composta por Mick Gordon, é um dos pilares que sustentam a experiência. Com um rock pesado e industrial, repleto de batidas eletrônicas e riffs distorcidos, a música não só acompanha a ação, mas também a intensifica. Tracks como "The Only Thing They Fear Is You" se tornaram icônicas, encapsulando a energia e a agressividade do jogo. A trilha sonora é tão essencial quanto as armas e os demônios, criando uma imersão total no caos.</p>  
+
+            <p>Além da ação, Doom Eternal expandiu o universo da franquia com uma narrativa mais elaborada, explorando a mitologia do Slayer e suas origens. A história é contada de forma direta, sem atrapalhar o ritmo frenético, mas oferece profundidade para quem quiser mergulhar nos códigos e textos espalhados pelo mundo.  
+            </p>
+        
+        </p>
+    </div>
+
+    <!-- Botão Voltar -->
+    <button class="botao-voltar" onclick="window.history.back()">Voltar</button>
+</body>
+</html>

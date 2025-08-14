@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloodborne</title>
+    <style>
+        /* Reset básico */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Alinha tudo verticalmente */
+        }
+
+        /* Estilo do título */
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px; /* Espaço entre o título e o vídeo */
+            text-align: center;
+        }
+
+        /* Estilo do vídeo maior */
+        .video-grande {
+            width: 800px; /* Largura do vídeo */
+            height: 450px; /* Altura proporcional (16:9) */
+            background-color: #000;
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Estilo do espaço para texto */
+        .texto {
+            width: 800px; /* Mesma largura do vídeo */
+            margin-top: 20px; /* Espaço entre o vídeo e o texto */
+            padding: 10px;
+            font-size: 16px;
+            color: #555;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Estilo do botão Voltar */
+        .botao-voltar {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botao-voltar:hover {
+            background-color: #555;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .video-grande, .texto {
+                width: 90%; /* Ajusta a largura em telas pequenas */
+                height: auto; /* Altura ajustada automaticamente */
+            }
+        }
+
+        /* Estilo do espaço para texto */
+        .texto {
+            width: 800px; /* Mesma largura do vídeo */
+            margin-top: 20px; /* Espaço entre o vídeo e o texto */
+            padding: 20px; /* Espaçamento interno */
+            font-size: 16px;
+            color: #333; /* Cor do texto */
+            text-align: center;
+            background-color: #e0e0e0; /* Cor de fundo cinza mais escura */
+            border: 1px solid #ccc; /* Borda sutil */
+            border-radius: 10px; /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        }
+    </style>
+</head>
+<body>
+    <!-- Título -->
+    <h1>Bloodborne</h1>
+
+    <!-- Vídeo Grande -->
+    <div class="video-grande">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kA614N3IHD4?si=Khv7Qvg82yqJEg7a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Espaço para Texto -->
+    <div class="texto">
+        <p>
+
+            <h1>O que voce precisa saber sobre Bloodborne</h1>
+            <h5>Horrores do desconhecido, bestas cosmicas e sangue</h5>
+
+            <p>Bloodborne, da FromSoftware, é um jogo que combina uma jogabilidade desafiadora e intensa com uma narrativa profunda e enigmática, ambientada em um mundo gótico e lovecraftiano repleto de horror e mistério. Situado na cidade de Yharnam, o jogo se destaca por sua atmosfera opressiva, design de nível intricado e interconectado, e uma liberdade de exploração que recompensa a curiosidade do jogador. A trama, que começa como uma simples caça às bestas, evolui para uma jornada cósmica perturbadora, envolvendo deuses antigos, realidades distorcidas e temas de insanidade e desconhecimento.</p>
+
+            <p>A narrativa é contada de forma fragmentada, através de descrições de itens, diálogos crípticos e ambientação, exigindo que o jogador interprete e descubra os segredos do mundo por conta própria. As quests e missões, muitas delas opcionais, oferecem escolhas morais ambíguas e consequências significativas, incentivando múltiplas playthroughs para explorar todas as possibilidades.</p>
+
+            <p>O universo de Bloodborne é uma mistura única de estética gótica vitoriana e horror cósmico, com criaturas grotescas, cenários sombrios e uma trilha sonora épica que eleva a experiência. A música, composta por peças orquestrais grandiosas e atmosféricas, complementa perfeitamente a tensão e a emoção do jogo, seja durante combates intensos ou encontros com chefes colossais.</p>  
+
+            <p>Em resumo, Bloodborne é uma obra-prima que oferece uma experiência imersiva, desafiadora e profundamente recompensadora, consolidando-se como um dos melhores jogos da FromSoftware e um marco no gênero de ação e RPG.</p>
+        
+        </p>
+    </div>
+
+    <!-- Botão Voltar -->
+    <button class="botao-voltar" onclick="window.history.back()">Voltar</button>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus jogos favoritos</title>
+
+    <style>
+    h1 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+     
+
+    h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    body, html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 420px;
+        }
+
+        .imagem{
+            width: 200px;
+            height: 112.5px;
+            background-color: #000;
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meus jogos favoritos e um breve texto sobre eles</h1>
+    <h2>Clicando nas imagens, voce ira para uma pagina como um texto sobre os jogos, alem de um video monstrando uma faixa de audio original do jogo em questao.
+        <br>
+        Obrigado por ler :D
+    </h2>
+
+    <div class="container">
+
+         <div class="imagem"> <!-- hotline miami -->
+            <a href="video1.html"><img src="imagens/hotline-miami.webp" alt="" width="200" height="112.5"></a>
+        </div>
+
+        <div class="imagem"> <!--Fallout New Vegas-->
+            <a href="video2.html"><img src="imagens/fallout.webp" alt="" width="210" height="112.5"></a>
+        </div>
+        
+        <div class="imagem"> <!--Bloodborne-->
+            <a href="video3.html"><img src="imagens/Bloodborne4.webp" alt="" width="200" height="112.5"></a>
+        </div>
+
+        <div class="imagem"> <!--Doom Eternal-->
+            <a href="video4.html"><img src="imagens/doom.webp" alt="" width="200" height="112.5"></a>
+        </div>
+    </div>
+</body>
+</html>

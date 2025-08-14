@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotline Miami</title>
+    <style>
+        /* Reset básico */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Alinha tudo verticalmente */
+        }
+
+        /* Estilo do título */
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px; /* Espaço entre o título e o vídeo */
+            text-align: center;
+        }
+
+        /* Estilo do vídeo maior */
+        .video-grande {
+            width: 800px; /* Largura do vídeo */
+            height: 450px; /* Altura proporcional (16:9) */
+            background-color: #000;
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Estilo do espaço para texto */
+        .texto {
+            width: 800px; /* Mesma largura do vídeo */
+            margin-top: 20px; /* Espaço entre o vídeo e o texto */
+            padding: 10px;
+            font-size: 16px;
+            color: #555;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Estilo do botão Voltar */
+        .botao-voltar {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botao-voltar:hover {
+            background-color: #555;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .video-grande, .texto {
+                width: 90%; /* Ajusta a largura em telas pequenas */
+                height: auto; /* Altura ajustada automaticamente */
+            }
+        }
+
+        /* Estilo do espaço para texto */
+        .texto {
+            width: 800px; /* Mesma largura do vídeo */
+            margin-top: 20px; /* Espaço entre o vídeo e o texto */
+            padding: 20px; /* Espaçamento interno */
+            font-size: 16px;
+            color: #333; /* Cor do texto */
+            text-align: center;
+            background-color: #e0e0e0; /* Cor de fundo cinza mais escura */
+            border: 1px solid #ccc; /* Borda sutil */
+            border-radius: 10px; /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        }
+    </style>
+</head>
+<body>
+    <!-- Título -->
+    <h1>Hotline Miami</h1>
+
+    <!-- Vídeo Grande -->
+    <div class="video-grande">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_IJQHqECK9g?si=DvXtS45aLGbQ3qk6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>>
+    </div>
+
+    <!-- Espaço para Texto -->
+    <div class="texto">
+        <p>
+
+            <h1>O que voce precisa saber sobre Hotline Miami</h1>
+            <h5>Violencia, drogas, trafico de drogas e xenofobia</h5>
+
+            <p>Hotline Miami é um jogo que mergulha o jogador em um turbilhão de violência extrema, narrativa sombria e uma atmosfera perturbadora. Desenvolvido pela Dennaton Games, o título se destaca por sua jogabilidade frenética e brutal, onde cada nível é uma coreografia de carnificina. O jogador assume o papel de um protagonista anônimo, mas popularmente chamado de Jacket, que recebe chamadas misteriosas ordenando que ele elimine gangues inteiras em locais fechados. A violência é explícita e gráfica, com golpes de armas brancas, tiros à queima-roupa e execuções brutais, tudo isso em um estilo visual pixelizado que, paradoxalmente, torna a experiência ainda mais impactante. </p> 
+            
+            <p>A narrativa de Hotline Miami é tão perturbadora quanto sua jogabilidade. O enredo é fragmentado, repleto de alucinações, personagens enigmáticos e uma trama que questiona a sanidade do protagonista e a moralidade de suas ações. O jogo aborda temas como niilismo, alienação e a natureza da violência, deixando o jogador refletindo sobre o propósito de suas ações e o significado (ou a falta dele) por trás de tudo. A história não oferece respostas fáceis, mas sim uma experiência que desafia e desconforta. </p> 
+            
+            <p>Um dos pontos altos do jogo é, sem dúvida, sua trilha sonora. Composta por artistas como M|O|O|N, Perturbator e Jasper Byrne, a música combina synthwave, eletrônica e batidas pulsantes que complementam perfeitamente o ritmo acelerado e caótico do jogo. A trilha não apenas intensifica a ação, mas também contribui para a atmosfera retro e psicodélica que define Hotline Miami. É um daqueles raros casos em que a música se torna parte intrínseca da experiência, elevando o jogo a outro patamar.  </p>
+            
+            <p>Em resumo, Hotline Miami é uma experiência visceral e perturbadora, que usa sua violência extrema e narrativa sombria para questionar o jogador e deixá-lo desconfortável. Combinado com uma trilha sonora icônica, o jogo se consolida como uma obra única e memorável, que desafia as convenções dos jogos de ação e deixa uma marca duradoura naqueles que se aventuram em seu mundo caótico e niilista.</p>
+        
+        </p>
+    </div>
+
+    <!-- Botão Voltar -->
+    <button class="botao-voltar" onclick="window.history.back()">Voltar</button>
+</body>
+</html>

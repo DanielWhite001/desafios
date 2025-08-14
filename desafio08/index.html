@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <style>
+      @font-face {
+        font-family: 'Emulogic';
+        src: url(../desafio08/assets/emulogic.ttf) format('truetype');
+      }
+      body {
+        font-family: 'Emulogic', sans-serif;
+      }
+    </style>
+</head>
+
+<body style="margin: 0; background-color: black;">
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <div style="display:none;">
+        <img id="animacoes" src="../desafio08/assets/animacoes.gif" width="140" height="20">
+        <img id="fantasmas" src="../desafio08/assets/fantasma.png" width="140" height="20">
+    </div>
+    <script src="fantasma.js"></script>
+    <script src="pacman.js"></script>
+    <script src="jogo.js"></script>
+</body>
+
+</html>
