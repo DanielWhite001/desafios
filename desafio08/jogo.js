@@ -21,7 +21,7 @@ let ghostImageLocations = [
   { x: 176, y: 121 },
 ];
 
-// Game variables
+// variáveis do jogo
 let fps = 30;
 let pacman;
 let oneBlockSize = 20;
@@ -31,9 +31,9 @@ let wallSpaceWidth = oneBlockSize / 1.6;
 let wallOffset = (oneBlockSize - wallSpaceWidth) / 2;
 let wallInnerColor = "black";
 
-// we now create the map of the walls,
-// if 1 wall, if 0 not wall
-// 21 columns // 23 rows
+// paredes do labirinto,
+// if 1 parede, if 0 sem paredes
+// 21 colunas // 23 linhas
 let map = [
   [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
