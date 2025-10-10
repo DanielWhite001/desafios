@@ -15,6 +15,7 @@ body{
     background: url('../desafio06/imagens/aviao.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 header{
@@ -79,7 +80,7 @@ header{
 
 .topo .botaoLogin:hover{
     background-color: white;
-    color: #db8c25;
+    color: #727272;
 }
 
 .wrapper{
@@ -140,7 +141,7 @@ header{
     right: 0;
     width: 45px;
     height: 45px;
-    background: #db8c25;
+    background: #727272;
     font-size: 2em;
     color: white;
     display: flex;
@@ -153,7 +154,7 @@ header{
 
 .form-caixa h2{
     font-size: 2em;
-    color: #db8c25;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -161,7 +162,7 @@ header{
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #db8c25;
+    border-bottom: 2px solid #ffffff;
     margin: 30px 0;
 }
 
@@ -171,7 +172,7 @@ header{
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #db8c25;
+    color: #ffffff;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -189,7 +190,7 @@ header{
     border: none;
     outline: none;
     font-size: 1em;
-    color: #db8c25;
+    color: #ffffff;
     font-weight: 600;
     padding: 0 35px 0 5px;
 
@@ -206,7 +207,7 @@ header{
 
 .relembrar{
     font-size: .9em;
-    color: #db8c25;
+    color: #ffffff;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -214,12 +215,12 @@ header{
 }
 
 .relembrar label input{
-    accent-color: #db8c25;
+    accent-color: #ffffff;
     margin-right: 3px;
 }
 
 .relembrar a{
-    color: #db8c25;
+    color: #ffffff;
 }
 
 .relembrar a:hover{
@@ -229,7 +230,7 @@ header{
 .botao{
     width: 100%;
     height: 45px;
-    background-color: #db8c25;
+    background-color: #727272;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -241,14 +242,14 @@ header{
 
 .login-registro{
     font-size: 1em;
-    color: #db8c25;
+    color: #ffffff;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-registro p a{
-    color: #db8c25;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
 }
